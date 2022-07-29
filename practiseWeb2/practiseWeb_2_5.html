@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+            "use strict"
+
+            // let beforeArr = [], afterArr = [];
+
+            //         let index = 0, i = 0, j = 0;
+
+            //         do {
+
+            //             beforeArr.push(++i);
+
+            //             afterArr.push(j++);
+
+            //             index++;
+
+            //         } while (index < 5);
+
+            let beforeArr = [], afterArr = [];
+            let i = 0;
+            let j = 0;
+            let index = 0;
+
+            
+            
+            do {
+                // ++i;
+                // j++;
+                beforeArr.push(++i);
+                afterArr.push(j++);
+                index++;
+            } while (index < 5);
+
+            /*В обоих массивах будет 5 элементов [1,2,3,4,5],
+            т.к. в первом случае у нас сразу прибавляется единица, а только потом проверяется условие,
+            а во втором случае у нас прибавляется единица после проверки условия*/
+
+            console.log(beforeArr);
+            console.log(afterArr);
+            
+        }
+    </script>
+</body>
+</html>
