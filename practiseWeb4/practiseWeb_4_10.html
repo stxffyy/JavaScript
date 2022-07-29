@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+            // let person = {};
+            // person['name'] = '';
+            // person['surname'] = '';
+            // person['setName'] = function () {this.name = 'Станислав'};
+            // person['setSurname'] = function () {this.surname = 'Сивинский'};
+            // persom['getFullName'] = function(name, surname) {
+            //     fullName = (newString).concat(name,'',surname);
+            // }
+
+
+           
+            let person = {
+                name: '',
+                surName: '',
+                setName: function (newName) {
+                    this.name = newName;
+                },
+                setSurname: function (newSurname) {
+                    this.surName = newSurname;
+                },
+                getFullName: function () {
+                    return (newString).concat(this.name+''+this.surName);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

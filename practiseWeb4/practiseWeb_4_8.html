@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+                // let city = {};
+                // city['name'] = 'ГородN';
+                // city['population'] = '10 млн';
+                // city['getName'] = function () { alert(this.name); };
+
+                // getName();
+
+                    // function getName() {
+                    //     // return this.name;
+                    //     // return this.name.value;
+                    //     // return this.population;
+                    //    console.log(this.name);
+                    // }
+
+                    // getName();
+
+                //     function printPropertirs () {
+                //         for (let code in city) {
+                //             var value = city[code];
+                //             code = +code;
+                //             alert(code + value);
+                //         // alert('Ключ ' + 'Значением ' + city[key]);
+                //         // return 
+                //     }
+                // }
+                
+                // printPropertirs();
+
+
+                    let city = {};
+                            city['name'] = 'ГородN'; // city { name: 'ГородN'}
+                            city['population'] = '10 млн';
+                            city['getName'] = function () { return this.name; };
+                            city['printProperties'] = function () {
+                                let result = '';
+                                for (item in this) {
+                                    if ((typeof this[item]) !== 'function') {
+                                        result = result + item + "=" + this[item] + "/";
+                                    }
+                                }
+                                console.log(result);
+                                
+                            }
+                            
+
+        }
+    </script>
+</body>
+</html>

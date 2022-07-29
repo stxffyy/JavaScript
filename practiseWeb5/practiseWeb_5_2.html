@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Работа 2-х таймеров</title>
+</head>
+
+<body>
+    <script>
+        let firstTimer = window.setTimeout(() => { alert('Отработал первый!'); }, 2000);
+        let secondTimer = window.setTimeout(() => { alert('Отработал второй!'); }, 4000);
+
+        clearTimeout(firstTimer);
+    </script>
+</body>
+
+</html>
