@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 6.5. Добавление элементов на страницу</title>
+</head>
+
+<body>
+    <ul class="list"></ul>
+</body>
+    <script>
+        {
+            'use strict'
+
+            function buildNames(listNames, parentNode) {
+
+                let root = document.getElementsByClassName(parentNode)[0];
+
+                if (root != undefined) {
+                    listNames.forEach(name => {
+                        let elem = document.createElement('li');
+                        elem.innertext = name;
+                        root.append(elem);
+                    });
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        }
+    </script>
+</html>

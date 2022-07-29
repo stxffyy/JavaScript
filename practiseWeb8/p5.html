@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {
+            'use strict';
+            /* let b = 'Сколько тебе лет?'
+            let c = '';
+            let a = prompt(b, c)
+
+            document.write(a); */
+
+
+            /* let a = prompt("Первое число?", 1);
+                    let b = prompt("Второе число?", 2);
+
+                    alert(+a + +b); */
+
+
+            /* let a = "" + 1 + 0 // 10 , тк у нас в выражении строка и +, результат тоже будет строкой)
+            let b = "" - 1 + 0 // -1 , тк у нас в выражении - и выражение приводится в числу
+            let c = true + false // 1
+            let d = 6 / "3" // 2
+            let e = "2" * "3" // 6
+            let f = 4 + 5 + "px" // 9px
+            let g = "$" + 4 + 5 // $45
+            let h = "4" - 2 // 
+            let i = "4px" - 2 //2
+            let j = "  -9  " + 5 // -9 5 
+            let k = "  -9  " - 5 // -14
+            let m = null + 1 // 1
+            let n = undefined + 1 //nan
+            let p = " \t \n" - 2 // -2
+
+            alert(p) */
+
+
+
+            // let aa = 5 > 4 //true
+            // let bb = "ананас" > "яблоко" //false
+            // let cc = "2" > "12" //true - посимвольное сравнение. Первый символ первой строки "2" больше, чем первый символ второй "1".
+            // let dd = undefined == null //true
+            // let ee = undefined === null //false
+            // let ff = null == "\n0\n" //false - null равен только undefined.
+            // let gg = null === +"\n0\n" //false - Строгое сравнение разных типов.
+
+            // document.write(gg)
+
+            
+            
+            // let a = prompt('Какое официальное название JavaScript?','')
+            
+            // if ( a === 'ECMAScript') {
+            //     alert('Верно!')
+            // } else {
+            //     document.write('Не верно!')
+            // }
+
+
+            // let value = prompt('Введите число', 0)
+
+            // if (value > 0) {
+            //     alert(1)
+            // } else if (value < 0) {
+            //     alert(-1)
+            // } else if (value==0) {
+            //     alert(0)
+            // }
+
+            // }
+
+
+            // let result = (a+b<4) ? 'Мало' : 'Много'; 
+
+
+            // let message = (login == 'Сотрудник') ? 'Привет' :
+            // (login == 'Директор') ? 'Здравствуйте' :
+            // (login == '') ? 'Нет логина' :
+            // '';
+
+           
+            // let a=50;
+            // if (a >= 14 && a <= 90) {
+            //     alert ('Число находится в диапозоне')
+            // }
+
+            // if (a<=14 && a>=90) {
+            //     ...
+            // } else if (!(a >= 14 && a <= 90)){
+            //     ...
+            // }
+
+
+
+            // let a = prompt('Ваш логин?', '');
+
+            // if (a ==='Админ') {
+                
+            //     let b = prompt('Пароль', '')
+
+            //     if (b ==='Я главный') 
+            //     alert('Здравствуйте');
+            //     else {
+            //         alert('Пароль неверный')
+            //     }
+
+            // } else if (a ==='' || a === null) {
+            //     alert('Отменено')
+
+            // } else{
+            //     alert('Я вас не знаю')
+            // }
+
+
+
+            // for (i=0; i<11; i++) {
+            //     if(i % 2 == 0 ) {
+            //     alert(i)
+            //     }
+            // }
+
+
+            // i = 0;
+            // while (i < 3) {
+            //     alert(`number ${i}!`);
+            //     i++;
+            // }
+
+
+
+            
+            // let num;
+
+            // do {
+            //     num = prompt('Введите число', 0);
+            // } while (num <=100 && num);
+            // Проверка && num вычисляется в false, когда num имеет 
+            // значение null или пустая строка ''. В этом случае цикл while тоже нужно прекратить.
+
+
+
+            // let n=10;
+
+            // outer:
+            // for (let i=2; i<=n; i++) {
+
+            //     for (let j=2; j<i; j++) {
+            //     if (i%j==0) continue outer; 
+            //     }
+            //      alert(i);
+
+            // }
+           
+
+
+            // let browser='';
+            // if (browser==='Edge') {
+            //     alert('Edge!')
+            // }else if (browser === 'Chrome' || 
+            // browser === 'FireFox' || 
+            // browser === 'Safari' || 
+            // browser === 'Opera') {
+            //     alert('Wow!')
+            // } else 
+            // alert (':(')
+
+
+            const number = +prompt('Введите число между 0 и 3', '');
+
+            switch (number) {
+                case 0:
+                alert('Вы ввели число 0');
+                break;
+                case 1:
+                alert('Вы ввели число 1');
+                break;
+                case 2:
+                case 3:
+                alert('Вы ввели число 2, а может и 3');
+
+                default:
+                
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

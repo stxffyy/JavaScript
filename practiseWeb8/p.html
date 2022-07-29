@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="practiseWeb_4_1.html">Перейти</a>
+    <button onclick="backToPast()">Назад</button>
+    <script>
+        {
+            "use strict"
+             window.object = {
+                name: 'Kate',
+                surname: 'Novoseltseva',
+                getName:  (_this) => {
+                    return _this.name +' '+ _this.surname;
+                    // return this;
+                }
+            }
+            // console.log(object.getName(object));
+
+            // console.log(window.document.title);
+            window.document.title = 'Работа с window';
+            // console.log(window.document.title);
+
+            backToPast = () => {
+                window.history.back();
+                window.history.go();
+            }
+            
+            console.log(window.history);
+            
+        }
+    </script>
+</body>
+</html>

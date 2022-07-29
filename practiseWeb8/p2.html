@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"></div>
+    <script>
+        {
+            let now = new Date();
+
+            let year = now.getFullYear(),
+                month = now.getMonth(),
+                day = now.getDate(),
+                dayOfWeek = now.getDay();
+
+            switch(month) {
+                case 0 :
+                    month = 'Январь'
+                    break;
+                case 1:
+                    month = 'Февраль'
+                    break;
+                case 2:
+                    month = 'Март'
+                    break;
+                case 3:
+                    month = 'Апрель'
+                    break;
+                case 4:
+                    month = 'Май'
+                    break;
+                case 5:
+                    month = 'Июнь'
+                    break;
+                case 6:
+                    month = 'Июль'
+                    break;
+                case 7:
+                    month = 'Август'
+                    break;
+                case 8:
+                    month = 'Сентябрь'
+                    break;
+                case 9:
+                    month = 'Октябрь'
+                    break;
+                case 10:
+                    month = 'Ноябрь'
+                    break;
+                case 11:
+                    month = 'Декабрь'
+                    break;
+            }
+
+            switch (dayOfWeek) {
+                case 1:
+                    dayOfWeek = 'Понедельник'
+                    break;
+                case 2:
+                    dayOfWeek = 'Вторник'
+                    break;
+                case 3:
+                    dayOfWeek = 'Среда'
+                    break;
+                case 4:
+                    dayOfWeek = 'Четверг'
+                    break;
+                case 5:
+                    dayOfWeek = 'Пятница'
+                    break;
+                case 6:
+                    dayOfWeek = 'Суббота'
+                    break;
+                case 7:
+                    dayOfWeek = 'Воскресенье'
+                    break;
+            }
+
+            
+            let tmp = '<p>' +day+ '</p>' + '<p>' + month + '</p>' 
+            +'<p>' + year + '</p>' + '<p>' + dayOfWeek + '</p>';
+            
+            document.querySelector('.container').innerHTML = tmp;
+
+            
+            // console.log(now.getTime());
+
+            // now.getFullYear(); //получить год
+
+            // console.log(now.getFullYear()); //получить год и вывести
+            // console.log(now.getMonth()); //получить номер месяца и вывести
+            // console.log(now.getDate()); //получить номер Дня и вывести
+            // console.log(now.getDay()); //получить номер дня в неделе и вывести
+            // console.log(now.getHours()); //получить часы и вывести
+            // console.log(now.getMinutes()); //получить минуты и вывести
+            // console.log(now.getSeconds()); //получить секунды и вывести
+
+        }
+
+
+    </script>
+</body>
+</html>

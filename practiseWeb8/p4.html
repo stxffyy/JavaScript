@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <span>Текст текст текст</span>
+    </div>
+    
+   <script>
+    {
+        'use strict';
+
+        
+      let contain = document.querySelector('.container');
+      // получили доступ к контейнеру
+
+      let getSpan = document.getElementsByTagName('span')[0];
+      //получаем доступ к спану
+
+      console.log(getSpan)
+      //проверяем выводится ли нужный нам спан
+
+      contain.removeChild(getSpan)
+      //удаляем спан
+
+
+
+
+
+    //   let p = document.createElement('p');
+
+    //   let textPNode = document.createTextNode('Текстовое содержимое параграфа');
+    //   p.appendChild(textPNode);
+       
+    //    p.innerText = 'Текстовое содержимое параграфа'
+
+    //    contain.appendChild(p);
+
+    //   console.log(typeof contain)
+
+    //   for (prop in contain) {
+    //     console.log(prop + ' - ' +contain[prop]);
+    //   }
+
+
+    // contain.innerText = '<p>Другой текст</p>'
+
+    // console.log(contain.innerHTML);
+
+
+   
+
+
+    }
+   </script> 
+</body>
+</html>

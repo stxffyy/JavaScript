@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        //Создаем объект, который далее запишем в куки
+let myCookies = [
+    { name: 'login', value: 'stanislav' }, 
+    { name: 'password', value: 'pass' }, 
+    { name: 'domain', value: 'localhost'}
+]
+//Записываем созданный выше объект в куки
+myCookies.forEach(item => {
+    document.cookie = encodeURIComponent(item.name) + '=' + encodeURIComponent(item.value);
+});
+//Теперь у нас в куках как минимум 3 куких находится
+console.log(document.cookie);
+
+        function getCookies() {
+            let arrResult = [];
+
+            let cookies = document.cookie.split('; ');
+
+            cookies.forEach(cookie => {
+                let tmp = cookie.split("=");
+                arrResult.push({name: tmp[0], value: tmp[1]});
+            });
+
+            return arrResult;
+
+        }
+    </script>
+</body>
+</html>
